@@ -1,0 +1,2023 @@
+<!-- Home Section -->
+    <section id="home" class="content-section">
+        <div class="section-wrapper">
+            <div class="section-heading">
+                <div class="section-label">Sistema de Formación</div>
+                <h2 class="section-title">Contenido Especializado</h2>
+                <p class="section-subtitle">
+                    Explora módulos técnicos estructurados sobre motores trifásicos, configuraciones de circuitos y herramientas de medición profesional.
+                </p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 35px;">
+                <div class="content-card" onclick="navigateToSection('motors')" style="cursor: pointer;">
+                    <h3>Motores Trifásicos</h3>
+                    <p>Campo magnético giratorio, velocidad síncrona y arquitectura de componentes principales del motor de inducción.</p>
+                </div>
+
+                <div class="content-card" onclick="navigateToSection('circuits')" style="cursor: pointer;">
+                    <h3>Circuitos Eléctricos</h3>
+                    <p>Conexiones Y-∆, análisis serie/paralelo y simulación interactiva de sistemas resistivos.</p>
+                </div>
+
+                <div class="content-card" onclick="navigateToSection('instruments')" style="cursor: pointer;">
+                    <h3>Instrumentación</h3>
+                    <p>Multímetro digital y pinza amperimétrica para mediciones precisas en sistemas trifásicos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="content-section">
+        <div class="section-wrapper">
+            <div class="section-heading">
+                <div class="section-label">Quiénes Somos</div>
+                <h2 class="section-title">Programa de Electricidad</h2>
+                <p class="section-subtitle">
+                    Aprendices del SENA comprometidos con el desarrollo técnico del sector eléctrico colombiano.
+                </p>
+            </div>
+
+            <div class="content-card">
+                <h3>Nuestra Formación</h3>
+                <p>Somos estudiantes del programa de Electricidad Industrial del SENA, parte de la Red de Conocimiento en Energía Eléctrica. Nos formamos en competencias técnicas avanzadas para responder a las necesidades del sector productivo colombiano.</p>
+                
+                <div class="video-wrapper" style="margin-top: 40px;">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/8M7KPc0ZYoo?si=F-AYJWLwKfPsVfle" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="content-card">
+                <h3>Competencias Técnicas</h3>
+                <table class="data-table">
+                    <tbody>
+                        <tr><td>Transformación y uso racional de energía eléctrica</td></tr>
+                        <tr><td>Control y automatización de procesos industriales</td></tr>
+                        <tr><td>Instalaciones eléctricas bajo normas RETIE y RETILAP</td></tr>
+                        <tr><td>Manejo de software especializado: CAD, PLC, HMI</td></tr>
+                        <tr><td>Interpretación de planos y diagramas eléctricos técnicos</td></tr>
+                        <tr><td>Desarrollo de competencias humanas y trabajo en equipo</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 40px;">
+                <div class="example-block">
+                    <div class="example-label">Proyección</div>
+                    <p><span class="highlight-text">33% de incremento</span> en demanda eléctrica de Colombia para 2025</p>
+                </div>
+                <div class="example-block">
+                    <div class="example-label">Alcance Regional</div>
+                    <p>Impacto en regiones <span class="highlight-text">Caribe, Andina y Pacífica</span></p>
+                </div>
+                <div class="example-block">
+                    <div class="example-label">Objetivo</div>
+                    <p>Modernización energética e <span class="highlight-text">innovación industrial</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Motors Section -->
+    <section id="motors" class="content-section">
+        <div class="section-wrapper">
+            <div class="section-heading">
+                <div class="section-label">Módulo 01</div>
+                <h2 class="section-title">Motores Trifásicos</h2>
+                <p class="section-subtitle">
+                    Análisis técnico del motor de inducción trifásico y sus principios de operación electromagnética.
+                </p>
+            </div>
+
+            <div class="tab-navigation">
+                <button class="tab-button active" onclick="switchTab('motors', 'field')">Campo Magnético</button>
+                <button class="tab-button" onclick="switchTab('motors', 'speed')">Velocidad Síncrona</button>
+                <button class="tab-button" onclick="switchTab('motors', 'components')">Componentes</button>
+            </div>
+
+            <!-- Tab: Campo Magnético -->
+            <div id="motors-field" class="tab-panel active">
+                <div class="split-container">
+                    <div class="model-container">
+                        <iframe src="https://sketchfab.com/models/9ea004a80f504716a330b21b3af8cb8e/embed" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="content-column">
+                        <div class="content-card">
+                            <h3>Campo Magnético Giratorio</h3>
+                            <p>El motor trifásico opera mediante la generación de un campo magnético rotante. Las tres corrientes de fase, desfasadas 120° entre sí, crean campos magnéticos individuales que se superponen vectorialmente.</p>
+                            <p>La resultante es un campo magnético de magnitud constante que rota a velocidad síncrona, determinada por la frecuencia de la red y el número de polos del estator.</p>
+                            
+                            <div class="video-wrapper">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MuNEI1b1F4w?si=mNZ5eBOFYhrw-KZf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                            </div>
+
+                            <h4>Principio de Inducción</h4>
+                            <p>El campo rotante del estator induce corrientes en las barras del rotor tipo jaula de ardilla por la Ley de Faraday. Estas corrientes generan un segundo campo magnético que interactúa con el campo del estator, produciendo el par electromagnético necesario para la rotación.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab: Velocidad -->
+            <div id="motors-speed" class="tab-panel">
+                <div class="split-container">
+                    <div class="model-container">
+                        <iframe src="https://sketchfab.com/models/9ea004a80f504716a330b21b3af8cb8e/embed" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="content-column">
+                        <div class="content-card">
+                            <h3>Velocidad Síncrona</h3>
+                            <p>La velocidad del campo magnético rotante se calcula mediante la siguiente expresión fundamental:</p>
+                            
+                            <div class="formula-label">Ecuación de Velocidad Síncrona</div>
+                            <div class="formula-container">
+Ns = (120 × f) / P
+
+Donde:
+Ns = Velocidad síncrona [RPM]
+f  = Frecuencia de red [Hz]
+P  = Número de polos
+                            </div>
+
+                            <div class="example-block">
+                                <div class="example-label">Caso de Estudio</div>
+                                <h4>Motor de 4 polos operando a 60 Hz</h4>
+                                <div class="example-step">
+                                    <p><strong>Datos:</strong></p>
+                                    <p>Frecuencia: f = 60 Hz</p>
+                                    <p>Polos: P = 4</p>
+                                </div>
+                                <div class="example-step">
+                                    <p><strong>Cálculo:</strong></p>
+                                    <p>Ns = (120 × 60) / 4</p>
+                                    <p>Ns = 7200 / 4</p>
+                                    <p class="example-result">Ns = 1800 RPM</p>
+                                </div>
+                                <div class="example-step">
+                                    <p><strong>Nota:</strong> La velocidad real del rotor será aproximadamente 1750 RPM debido al deslizamiento nominal de 2.8%</p>
+                                </div>
+                            </div>
+
+                            <h4>Tabla de Velocidades Síncronas</h4>
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Número de Polos</th>
+                                        <th>50 Hz</th>
+                                        <th>60 Hz</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>2</td><td>3000 RPM</td><td>3600 RPM</td></tr>
+                                    <tr><td>4</td><td>1500 RPM</td><td>1800 RPM</td></tr>
+                                    <tr><td>6</td><td>1000 RPM</td><td>1200 RPM</td></tr>
+                                    <tr><td>8</td><td>750 RPM</td><td>900 RPM</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab: Componentes -->
+            <div id="motors-components" class="tab-panel">
+                <div class="split-container">
+                    <div class="model-container">
+                        <iframe src="https://sketchfab.com/models/9ea004a80f504716a330b21b3af8cb8e/embed" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="content-column">
+                        <div class="content-card">
+                            <h3>Arquitectura de Componentes</h3>
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Componente</th>
+                                        <th>Función Técnica</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Estator</strong></td>
+                                        <td>Estructura fija que aloja las bobinas trifásicas generadoras del campo magnético rotante</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Rotor Jaula de Ardilla</strong></td>
+                                        <td>Elemento móvil con barras conductoras cortocircuitadas que giran por inducción electromagnética</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Caja de Bornes</strong></td>
+                                        <td>Panel de conexión con terminales U1-V1-W1 y U2-V2-W2 para configuración Y o ∆</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Sistema de Ventilación</strong></td>
+                                        <td>Conjunto de aletas y ventilador para disipación térmica durante operación continua</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Rodamientos</strong></td>
+                                        <td>Elementos de soporte que permiten rotación del eje con mínima fricción mecánica</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Circuits Section -->
+    <section id="circuits" class="content-section">
+        <div class="section-wrapper">
+            <div class="section-heading">
+                <div class="section-label">Módulo 02</div>
+                <h2 class="section-title">Circuitos y Conexiones</h2>
+                <p class="section-subtitle">
+                    Configuraciones eléctricas trifásicas y análisis de circuitos resistivos con simulación interactiva.
+                </p>
+            </div>
+
+            <div class="tab-navigation">
+                <button class="tab-button active" onclick="switchTab('circuits', 'wye-delta')">Conexiones Y-∆</button>
+                <button class="tab-button" onclick="switchTab('circuits', 'series-parallel')">Serie/Paralelo</button>
+            </div>
+
+            <!-- Tab: Wye-Delta -->
+            <div id="circuits-wye-delta" class="tab-panel active">
+                <div class="split-container">
+                    <div class="model-container">
+                        <iframe src="https://sketchfab.com/models/d76023dffef546399e27c5b22c02d48e/embed" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="content-column">
+                        <div class="content-card">
+                            <h3>Conexión Estrella (Y)</h3>
+                            <p>Configuración donde los terminales U2, V2 y W2 se unen en un punto común, formando el nodo neutro del sistema.</p>
+                            
+                            <div class="formula-label">Relaciones de Tensión y Corriente</div>
+                            <div class="formula-container">
+V_fase = V_línea / √3
+I_fase = I_línea
+                            </div>
+
+                            <h4>Características Operativas</h4>
+                            <ul>
+                                <li>Reduce la tensión aplicada a cada bobina en un factor de √3</li>
+                                <li>Corriente de arranque aproximadamente 33% de la configuración ∆</li>
+                                <li>Par de arranque reducido proporcionalmente</li>
+                                <li>Ideal para arranques suaves y protección del sistema eléctrico</li>
+                            </ul>
+                        </div>
+
+                        <div class="content-card">
+                            <h3>Conexión Triángulo (∆)</h3>
+                            <p>Configuración de circuito cerrado mediante puentes: U1-W2, V1-U2, W1-V2, formando una topología triangular.</p>
+                            
+                            <div class="formula-label">Relaciones de Tensión y Corriente</div>
+                            <div class="formula-container">
+V_fase = V_línea
+I_fase = I_línea / √3
+                            </div>
+
+                            <h4>Características Operativas</h4>
+                            <ul>
+                                <li>Cada bobina recibe la tensión de línea completa</li>
+                                <li>Mayor par de arranque en comparación con conexión Y</li>
+                                <li>Operación nominal para máxima potencia de salida</li>
+                                <li>No dispone de punto neutro accesible</li>
+                            </ul>
+
+                            <div class="video-wrapper">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oX35avUDayM?si=Ik9bmb4x6AZOYoGL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                            </div>
+                        </div>
+
+                        <div class="content-card">
+                            <div class="simulator-panel">
+                                <div class="simulator-title">Simulador de Conexiones</div>
+                                <canvas id="wyeDeltaCanvas" class="simulator-canvas"></canvas>
+                                
+                                <div class="simulator-controls">
+                                    <button class="control-button active" onclick="setConnection('Y')">Conexión Y</button>
+                                    <button class="control-button" onclick="setConnection('Delta')">Conexión ∆</button>
+                                </div>
+
+                                <div class="slider-container">
+                                    <div class="slider-header">
+                                        <span class="slider-label">Tensión de Línea</span>
+                                        <span class="slider-value" id="vLineDisplay">400 V</span>
+                                    </div>
+                                    <input type="range" id="vLineSlider" min="220" max="690" value="400" step="10" oninput="calculateConnection()">
+                                </div>
+
+                                <div id="connectionResult" class="result-display"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab: Series-Parallel -->
+            <div id="circuits-series-parallel" class="tab-panel">
+                <div class="content-column" style="max-width: 1400px; margin: 0 auto;">
+                    <div class="content-card">
+                        <h3>Análisis de Circuitos Resistivos</h3>
+                        
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 45px; margin-top: 35px;">
+                            <div>
+                                <h4>Circuito Serie</h4>
+                                <p>Los elementos se conectan secuencialmente, formando un único camino para la corriente eléctrica.</p>
+                                
+                                <div class="formula-label">Ecuaciones Fundamentales</div>
+                                <div class="formula-container">
+R_total = R₁ + R₂ + R₃
+I = V / R_total
+V_n = I × R_n
+                                </div>
+
+                                <div class="example-block">
+                                    <div class="example-label">Ejemplo Numérico</div>
+                                    <p><strong>Datos:</strong> V = 24V, R₁ = 100Ω, R₂ = 200Ω</p>
+                                    <p class="example-result">R_total = 300Ω</p>
+                                    <p class="example-result">I = 80 mA</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h4>Circuito Paralelo</h4>
+                                <p>Los elementos comparten nodos inicial y final, con tensión idéntica en todas las ramas del circuito.</p>
+                                
+                                <div class="formula-label">Ecuaciones Fundamentales</div>
+                                <div class="formula-container">
+1/R_total = 1/R₁ + 1/R₂ + 1/R₃
+V_n = V_total
+I_total = I₁ + I₂ + I₃
+                                </div>
+
+                                <div class="example-block">
+                                    <div class="example-label">Ejemplo Numérico</div>
+                                    <p><strong>Datos:</strong> V = 12V, R₁ = 60Ω, R₂ = 30Ω</p>
+                                    <p class="example-result">R_total = 20Ω</p>
+                                    <p class="example-result">I_total = 600 mA</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="simulator-panel" style="margin-top: 45px;">
+                            <div class="simulator-title">Simulador de Circuitos</div>
+                            
+                            <div class="simulator-controls">
+                                <button class="control-button active" onclick="setCircuitType('series')">Configuración Serie</button>
+                                <button class="control-button" onclick="setCircuitType('parallel')">Configuración Paralelo</button>
+                            </div>
+
+                            <div class="slider-container">
+                                <div class="slider-header">
+                                    <span class="slider-label">Tensión de Fuente</span>
+                                    <span class="slider-value" id="vSourceDisplay">12 V</span>
+                                </div>
+                                <input type="range" id="vSourceSlider" min="5" max="50" value="12" step="1" oninput="calculateCircuit()">
+                            </div>
+
+                            <div class="slider-container">
+                                <div class="slider-header">
+                                    <span class="slider-label">Resistencia R₁</span>
+                                    <span class="slider-value" id="r1Display">100 Ω</span>
+                                </div>
+                                <input type="range" id="r1Slider" min="10" max="500" value="100" step="10" oninput="calculateCircuit()">
+                            </div>
+
+                            <div class="slider-container">
+                                <div class="slider-header">
+                                    <span class="slider-label">Resistencia R₂</span>
+                                    <span class="slider-value" id="r2Display">200 Ω</span>
+                                </div>
+                                <input type="range" id="r2Slider" min="10" max="500" value="200" step="10" oninput="calculateCircuit()">
+                            </div>
+
+                            <div id="circuitResult" class="result-display"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instruments Section -->
+    <section id="instruments" class="content-section">
+        <div class="section-wrapper">
+            <div class="section-heading">
+                <div class="section-label">Módulo 03</div>
+                <h2 class="section-title">Instrumentación</h2>
+                <p class="section-subtitle">
+                    Herramientas de medición y diagnóstico en sistemas eléctricos industriales de alta precisión.
+                </p>
+            </div>
+
+            <div class="tab-navigation">
+                <button class="tab-button active" onclick="switchTab('instruments', 'multimeter')">Multímetro Digital</button>
+                <button class="tab-button" onclick="switchTab('instruments', 'clamp')">Pinza Amperimétrica</button>
+            </div>
+
+            <!-- Tab: Multimeter -->
+            <div id="instruments-multimeter" class="tab-panel active">
+                <div class="split-container">
+                    <div class="model-container">
+                        <iframe src="https://sketchfab.com/models/79ac684e66b34554ba869bd2fc3c2653/embed" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="content-column">
+                        <div class="content-card">
+                            <h3>Multímetro Digital</h3>
+                            <p>Instrumento de medición multifunción para magnitudes eléctricas en sistemas de corriente alterna y continua con alta resolución.</p>
+
+                            <h4>Funciones Principales</h4>
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Función</th>
+                                        <th>Aplicación Técnica</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>VAC</strong></td>
+                                        <td>Medición de tensión alterna en redes trifásicas y monofásicas</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>VDC</strong></td>
+                                        <td>Medición de tensión continua en baterías y fuentes reguladas</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Ω (Ohmios)</strong></td>
+                                        <td>Medición de resistencia eléctrica en bobinas y conductores</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Continuidad</strong></td>
+                                        <td>Verificación de conductividad con indicador acústico</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="video-wrapper">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uUw-mYk8iCA?si=mp8_Ys9zuhFT5Gfi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                            </div>
+                        </div>
+
+                        <div class="content-card">
+                            <h3>Medición en Sistemas Trifásicos</h3>
+                            
+                            <h4>Tensión Fase-Fase</h4>
+                            <p>Medición entre dos conductores de fase (R-S, S-T, R-T). En un sistema de 400V trifásico, la lectura nominal será aproximadamente 400V.</p>
+
+                            <h4>Tensión Fase-Neutro</h4>
+                            <p>Medición entre un conductor de fase y el neutro. En un sistema 400V/230V, la lectura será 230V (400/√3 ≈ 230V).</p>
+
+                            <div class="example-block">
+                                <div class="example-label">Caso Práctico: Diagnóstico de Bobina</div>
+                                <table class="data-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Bobina</th>
+                                            <th>Resistencia</th>
+                                            <th>Estado</th>
+                                            <th>Diagnóstico</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>U1-U2</td>
+                                            <td>2.5 Ω</td>
+                                            <td><span class="status-badge status-ok">Normal</span></td>
+                                            <td>Operación correcta</td>
+                                        </tr>
+                                        <tr>
+                                            <td>V1-V2</td>
+                                            <td>2.4 Ω</td>
+                                            <td><span class="status-badge status-ok">Normal</span></td>
+                                            <td>Operación correcta</td>
+                                        </tr>
+                                        <tr>
+                                            <td>W1-W2</td>
+                                            <td>∞ (OL)</td>
+                                            <td><span class="status-badge status-error">Falla</span></td>
+                                            <td>Circuito abierto</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p style="margin-top: 22px;"><strong>Conclusión:</strong> La bobina W presenta interrupción del conductor. El motor requiere intervención para reemplazo o rebobinado del devanado afectado.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab: Clamp Meter -->
+            <div id="instruments-clamp" class="tab-panel">
+                <div class="split-container">
+                    <div class="model-container">
+                        <iframe src="https://sketchfab.com/models/a5d90287e9f84d2d99299343107520b4/embed" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="content-column">
+                        <div class="content-card">
+                            <h3>Pinza Amperimétrica</h3>
+                            <p>Instrumento de medición de corriente basado en el principio del transformador de corriente, permitiendo mediciones sin interrupción del circuito eléctrico.</p>
+
+                            <h4>Principio de Operación</h4>
+                            <p>El conductor por el que circula corriente genera un campo magnético variable proporcional a la corriente. Este campo induce una corriente en la bobina secundaria del instrumento, que se convierte en lectura mediante circuitería electrónica de precisión.</p>
+
+                            <div class="formula-label">Relación de Transformación</div>
+                            <div class="formula-container">
+I_primaria / I_secundaria = N_secundaria / N_primaria
+                            </div>
+
+                            <div class="video-wrapper">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kJpztYGTCxE?si=deKgAk81puK6HTl5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                            </div>
+                        </div>
+
+                        <div class="content-card">
+                            <h3>Procedimiento de Medición</h3>
+                            
+                            <div style="background: rgba(255, 68, 68, 0.1); border: 1px solid rgba(255, 68, 68, 0.3); border-radius: 0; padding: 22px; margin: 22px 0;">
+                                <strong style="color: #ff4444; font-size: 1.15rem;">Regla Crítica de Operación</strong>
+                                <p style="margin-top: 12px; color: var(--text-dim); line-height: 1.7;">Medir únicamente UN conductor a la vez. Si se rodean múltiples conductores, los campos magnéticos se cancelan vectorialmente según la Ley de Kirchhoff, resultando en lecturas erróneas o nulas.</p>
+                            </div>
+
+                            <div class="example-block">
+                                <div class="example-label">Medición en Sistema Trifásico</div>
+                                <p><strong>Sistema:</strong> Motor 10 kW, 400V, operación nominal</p>
+                                <table class="data-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Fase</th>
+                                            <th>Corriente Medida</th>
+                                            <th>Desviación</th>
+                                            <th>Estado</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Fase R</td>
+                                            <td>18.2 A</td>
+                                            <td>+1.1%</td>
+                                            <td><span class="status-badge status-ok">Normal</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fase S</td>
+                                            <td>17.9 A</td>
+                                            <td>-0.6%</td>
+                                            <td><span class="status-badge status-ok">Normal</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fase T</td>
+                                            <td>18.1 A</td>
+                                            <td>+0.5%</td>
+                                            <td><span class="status-badge status-ok">Normal</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p style="margin-top: 22px;"><strong>Análisis:</strong> Sistema equilibrado con desviación máxima inferior al 2%, dentro de parámetros normales de operación trifásica.</p>
+                            </div>
+                        </div>
+
+                        <div class="content-card">
+                            <div class="simulator-panel">
+                                <div class="simulator-title">Simulador de Medición</div>
+                                <p style="color: var(--text-dim); margin-bottom: 22px;">Arrastra la pinza sobre un conductor para realizar la medición de corriente</p>
+                                <canvas id="clampCanvas" class="simulator-canvas"></canvas>
+                                <div id="clampResult" class="result-display" style="display: none;"></div>
+                                <button class="control-button" onclick="resetClamp()" style="margin-top: 22px;">Reiniciar Simulador</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Global State Management
+        let currentConnection = 'Y';
+        let currentCircuitType = 'series';
+        let clampX = 100;
+        let clampY = 200;
+        let isDragging = false;
+
+        // Site Entry Function
+        function enterSite() {
+            document.getElementById('coverPage').classList.add('hidden');
+            document.getElementById('mainNav').classList.add('active');
+            document.getElementById('home').classList.add('active');
+            window.scrollTo(0, 0);
+        }
+
+        // Navigation Function
+        function navigateToSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('.content-section').forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // Show target section
+            document.getElementById(sectionId).classList.add('active');
+
+            // Update nav buttons
+            document.querySelectorAll('.nav-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+
+            // Initialize section-specific features
+            if (sectionId === 'circuits') {
+                setTimeout(() => {
+                    drawWyeDelta();
+                    calculateConnection();
+                }, 100);
+            } else if (sectionId === 'instruments') {
+                setTimeout(() => {
+                    drawClampMeter();
+                }, 100);
+            }
+        }
+
+        // Tab Switching Function
+        function switchTab(section, tabId) {
+            // Hide all tab panels in this section
+            document.querySelectorAll(`#${section} .tab-panel`).forEach(panel => {
+                panel.classList.remove('active');
+            });
+
+            // Show target panel
+            document.getElementById(`${section}-${tabId}`).classList.add('active');
+
+            // Update tab buttons
+            document.querySelectorAll(`#${section} .tab-button`).forEach(button => {
+                button.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            // Initialize tab-specific features
+            if (tabId === 'wye-delta') {
+                setTimeout(() => {
+                    drawWyeDelta();
+                    calculateConnection();
+                }, 100);
+            } else if (tabId === 'clamp') {
+                setTimeout(() => {
+                    drawClampMeter();
+                }, 100);
+            }
+        }
+
+        // Wye-Delta Simulator Functions
+        function setConnection(type) {
+            currentConnection = type;
+            document.querySelectorAll('#wyeDeltaCanvas').closest('.simulator-panel').querySelectorAll('.control-button').forEach((btn, index) => {
+                btn.classList.toggle('active', (index === 0 && type === 'Y') || (index === 1 && type === 'Delta'));
+            });
+            drawWyeDelta();
+            calculateConnection();
+        }
+
+        function drawWyeDelta() {
+            const canvas = document.getElementById('wyeDeltaCanvas');
+            if (!canvas) return;
+
+            const ctx = canvas.getContext('2d');
+            const width = canvas.width = canvas.offsetWidth;
+            const height = canvas.height = 450;
+
+            // Clear canvas
+            ctx.clearRect(0, 0, width, height);
+            ctx.fillStyle = '#0A0A0A';
+            ctx.fillRect(0, 0, width, height);
+
+            const centerX = width / 2;
+            const centerY = height / 2;
+            const radius = 120;
+
+            // Draw title
+            ctx.fillStyle = '#FEE440';
+            ctx.font = '700 14px Inter';
+            ctx.letterSpacing = '3px';
+            ctx.textAlign = 'center';
+            ctx.fillText(
+                currentConnection === 'Y' ? 'CONFIGURACIÓN ESTRELLA (Y)' : 'CONFIGURACIÓN TRIÁNGULO (∆)',
+                centerX,
+                40
+            );
+
+            if (currentConnection === 'Y') {
+                // Star configuration
+                const points = [
+                    { x: centerX, y: centerY - radius, label: 'U1' },
+                    { x: centerX + radius * 0.866, y: centerY + radius * 0.5, label: 'V1' },
+                    { x: centerX - radius * 0.866, y: centerY + radius * 0.5, label: 'W1' }
+                ];
+
+                // Draw lines from center
+                ctx.strokeStyle = '#FEE440';
+                ctx.lineWidth = 3;
+                points.forEach(point => {
+                    ctx.beginPath();
+                    ctx.moveTo(centerX, centerY);
+                    ctx.lineTo(point.x, point.y);
+                    ctx.stroke();
+                });
+
+                // Draw center point (neutral)
+                ctx.fillStyle = '#0094FF';
+                ctx.beginPath();
+                ctx.arc(centerX, centerY, 12, 0, Math.PI * 2);
+                ctx.fill();
+
+                ctx.fillStyle = '#E8E8E8';
+                ctx.font = '600 12px Inter';
+                ctx.fillText('N', centerX, centerY + 4);
+
+                // Draw terminal points
+                points.forEach(point => {
+                    ctx.fillStyle = '#FEE440';
+                    ctx.beginPath();
+                    ctx.arc(point.x, point.y, 18, 0, Math.PI * 2);
+                    ctx.fill();
+
+                    ctx.fillStyle = '#0A0A0A';
+                    ctx.font = '700 13px Inter';
+                    ctx.fillText(point.label, point.x, point.y + 5);
+                });
+
+            } else {
+                // Delta configuration
+                const points = [
+                    { x: centerX, y: centerY - radius },
+                    { x: centerX + radius * 0.866, y: centerY + radius * 0.5 },
+                    { x: centerX - radius * 0.866, y: centerY + radius * 0.5 }
+                ];
+
+                // Draw triangle
+                ctx.strokeStyle = '#FEE440';
+                ctx.lineWidth = 3;
+                ctx.beginPath();
+                ctx.moveTo(points[0].x, points[0].y);
+                ctx.lineTo(points[1].x, points[1].y);
+                ctx.lineTo(points[2].x, points[2].y);
+                ctx.closePath();
+                ctx.stroke();
+
+                // Draw terminal points
+                points.forEach(point => {
+                    ctx.fillStyle = '#FEE440';
+                    ctx.beginPath();
+                    ctx.arc(point.x, point.y, 18, 0, Math.PI * 2);
+                    ctx.fill();
+                });
+            }
+
+            // Animate
+            requestAnimationFrame(drawWyeDelta);
+        }
+
+        function calculateConnection() {
+            const voltage = parseFloat(document.getElementById('vLineSlider').value);
+            document.getElementById('vLineDisplay').textContent = voltage + ' V';
+
+            const sqrt3 = Math.sqrt(3);
+            const resultDiv = document.getElementById('connectionResult');
+
+            if (currentConnection === 'Y') {
+                const vPhase = voltage / sqrt3;
+                resultDiv.innerHTML = `
+<strong>CONEXIÓN ESTRELLA (Y)</strong><br><br>
+V_fase = ${vPhase.toFixed(1)} V<br>
+I_fase = I_línea<br><br>
+Reducción de tensión por fase: ${((1 - 1/sqrt3) * 100).toFixed(1)}%
+                `;
+            } else {
+                resultDiv.innerHTML = `
+<strong>CONEXIÓN TRIÁNGULO (∆)</strong><br><br>
+V_fase = ${voltage} V<br>
+I_fase = I_línea / √3<br><br>
+Tensión de fase completa aplicada a cada bobina
+                `;
+            }
+        }
+
+        // Circuit Simulator Functions
+        function setCircuitType(type) {
+            currentCircuitType = type;
+            document.querySelectorAll('#circuits-series-parallel .simulator-panel .control-button').forEach((btn, index) => {
+                btn.classList.toggle('active', (index === 0 && type === 'series') || (index === 1 && type === 'parallel'));
+            });
+            calculateCircuit();
+        }
+
+        function calculateCircuit() {
+            const voltage = parseFloat(document.getElementById('vSourceSlider').value);
+            const r1 = parseFloat(document.getElementById('r1Slider').value);
+            const r2 = parseFloat(document.getElementById('r2Slider').value);
+
+            document.getElementById('vSourceDisplay').textContent = voltage + ' V';
+            document.getElementById('r1Display').textContent = r1 + ' Ω';
+            document.getElementById('r2Display').textContent = r2 + ' Ω';
+
+            const resultDiv = document.getElementById('circuitResult');
+
+            if (currentCircuitType === 'series') {
+                const rTotal = r1 + r2;
+                const current = voltage / rTotal;
+                const v1 = current * r1;
+                const v2 = current * r2;
+                const power = voltage * current;
+
+                resultDiv.innerHTML = `
+<strong>CONFIGURACIÓN SERIE</strong><br><br>
+R_total = ${rTotal.toFixed(1)} Ω<br>
+I_circuito = ${(current * 1000).toFixed(1)} mA<br>
+V_R1 = ${v1.toFixed(2)} V<br>
+V_R2 = ${v2.toFixed(2)} V<br>
+P_total = ${power.toFixed(2)} W
+                `;
+            } else {
+                const rTotal = (r1 * r2) / (r1 + r2);
+                const i1 = voltage / r1;
+                const i2 = voltage / r2;
+                const iTotal = i1 + i2;
+                const power = voltage * iTotal;
+
+                resultDiv.innerHTML = `
+<strong>CONFIGURACIÓN PARALELO</strong><br><br>
+R_total = ${rTotal.toFixed(1)} Ω<br>
+I_total = ${(iTotal * 1000).toFixed(1)} mA<br>
+I_R1 = ${(i1 * 1000).toFixed(1)} mA<br>
+I_R2 = ${(i2 * 1000).toFixed(1)} mA<br>
+P_total = ${power.toFixed(2)} W
+                `;
+            }
+        }
+
+        // Clamp Meter Simulator Functions
+        function drawClampMeter() {
+            const canvas = document.getElementById('clampCanvas');
+            if (!canvas) return;
+
+            const ctx = canvas.getContext('2d');
+            const width = canvas.width = canvas.offsetWidth;
+            const height = canvas.height = 450;
+
+            // Clear canvas
+            ctx.clearRect(0, 0, width, height);
+            ctx.fillStyle = '#0A0A0A';
+            ctx.fillRect(0, 0, width, height);
+
+            // Define phase conductors
+            const phases = [
+                { x: width * 0.3, y: height / 2, label: 'R', current: 18.2, color: '#ff4444' },
+                { x: width * 0.5, y: height / 2, label: 'S', current: 17.9, color: '#ffaa00' },
+                { x: width * 0.7, y: height / 2, label: 'T', current: 18.1, color: '#0094FF' }
+            ];
+
+            // Draw conductors
+            phases.forEach(phase => {
+                // Conductor bar
+                ctx.fillStyle = phase.color;
+                ctx.fillRect(phase.x - 12, phase.y - 60, 24, 120);
+
+                ctx.strokeStyle = '#FEE440';
+                ctx.lineWidth = 1;
+                ctx.strokeRect(phase.x - 12, phase.y - 60, 24, 120);
+
+                // Labels
+                ctx.fillStyle = '#E8E8E8';
+                ctx.font = '700 14px Inter';
+                ctx.textAlign = 'center';
+                ctx.fillText('FASE ' + phase.label, phase.x, phase.y - 80);
+
+                ctx.font = '600 13px JetBrains Mono';
+                ctx.fillStyle = '#FEE440';
+                ctx.fillText(phase.current + ' A', phase.x, phase.y + 90);
+            });
+
+            // Draw clamp meter
+            ctx.strokeStyle = '#ff0000';
+            ctx.lineWidth = 8;
+            ctx.lineCap = 'round';
+            ctx.shadowColor = '#ff0000';
+            ctx.shadowBlur = 15;
+
+            // Upper jaw
+            ctx.beginPath();
+            ctx.arc(clampX, clampY, 40, Math.PI, 0, false);
+            ctx.stroke();
+
+            // Lower jaw
+            ctx.beginPath();
+            ctx.arc(clampX, clampY, 40, 0, Math.PI, false);
+            ctx.stroke();
+
+            // Handle
+            ctx.beginPath();
+            ctx.moveTo(clampX + 40, clampY);
+            ctx.lineTo(clampX + 90, clampY);
+            ctx.stroke();
+
+            ctx.shadowBlur = 0;
+
+            // Check for measurement
+            phases.forEach(phase => {
+                if (Math.abs(clampX - phase.x) < 50 && Math.abs(clampY - phase.y) < 70) {
+                    const resultDiv = document.getElementById('clampResult');
+                    resultDiv.innerHTML = `
+<strong>MEDICIÓN REGISTRADA</strong><br><br>
+Fase ${phase.label}: ${phase.current} A<br>
+Estado: Normal<br>
+Desbalance: < 2%<br>
+Timestamp: ${new Date().toLocaleTimeString()}
+                    `;
+                    resultDiv.style.display = 'block';
+                }
+            });
+        }
+
+        function resetClamp() {
+            clampX = 100;
+            clampY = 200;
+            document.getElementById('clampResult').style.display = 'none';
+            drawClampMeter();
+        }
+
+        // Event Listeners Setup
+        document.addEventListener('DOMContentLoaded', function() {
+            const clampCanvas = document.getElementById('clampCanvas');
+            
+            if (clampCanvas) {
+                // Mouse events
+                clampCanvas.addEventListener('mousedown', (e) => {
+                    const rect = clampCanvas.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+                    const distance = Math.sqrt((x - clampX) ** 2 + (y - clampY) ** 2);
+                    
+                    if (distance < 60) {
+                        isDragging = true;
+                    }
+                });
+
+                clampCanvas.addEventListener('mousemove', (e) => {
+                    if (isDragging) {
+                        const rect = clampCanvas.getBoundingClientRect();
+                        clampX = e.clientX - rect.left;
+                        clampY = e.clientY - rect.top;
+                        drawClampMeter();
+                    }
+                });
+
+                clampCanvas.addEventListener('mouseup', () => {
+                    isDragging = false;
+                });
+
+                clampCanvas.addEventListener('mouseleave', () => {
+                    isDragging = false;
+                });
+
+                // Touch events for mobile
+                clampCanvas.addEventListener('touchstart', (e) => {
+                    const rect = clampCanvas.getBoundingClientRect();
+                    const x = e.touches[0].clientX - rect.left;
+                    const y = e.touches[0].clientY - rect.top;
+                    const distance = Math.sqrt((x - clampX) ** 2 + (y - clampY) ** 2);
+                    
+                    if (distance < 60) {
+                        isDragging = true;
+                        e.preventDefault();
+                    }
+                });
+
+                clampCanvas.addEventListener('touchmove', (e) => {
+                    if (isDragging) {
+                        e.preventDefault();
+                        const rect = clampCanvas.getBoundingClientRect();
+                        clampX = e.touches[0].clientX - rect.left;
+                        clampY = e.touches[0].clientY - rect.top;
+                        drawClampMeter();
+                    }
+                });
+
+                clampCanvas.addEventListener('touchend', () => {
+                    isDragging = false;
+                });
+            }
+
+            // Initialize circuit calculator if present
+            if (document.getElementById('circuitResult')) {
+                calculateCircuit();
+            }
+        });
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricidad Industrial | SENA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #FEE440;
+            --dark: #0A0A0A;
+            --dark-light: #141414;
+            --dark-medium: #1E1E1E;
+            --gray: #2A2A2A;
+            --gray-light: #404040;
+            --blue: #0094FF;
+            --text: #E8E8E8;
+            --text-dim: #A0A0A0;
+            --text-muted: #707070;
+            --border: rgba(254, 228, 64, 0.15);
+            --glow: rgba(254, 228, 64, 0.25);
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--dark);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Animated Technical Background */
+        .tech-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .grid-pattern {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(90deg, rgba(254, 228, 64, 0.03) 1px, transparent 1px),
+                linear-gradient(0deg, rgba(254, 228, 64, 0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+            animation: gridSlide 40s linear infinite;
+            opacity: 0.4;
+        }
+
+        @keyframes gridSlide {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(60px, 60px); }
+        }
+
+        .pulse-line {
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            background: linear-gradient(90deg, transparent, var(--primary), transparent);
+            animation: pulse 6s ease-in-out infinite;
+            opacity: 0;
+        }
+
+        .pulse-line-1 { top: 25%; animation-delay: 0s; }
+        .pulse-line-2 { top: 55%; animation-delay: 3s; }
+        .pulse-line-3 { top: 75%; animation-delay: 1.5s; }
+
+        @keyframes pulse {
+            0%, 100% { 
+                opacity: 0; 
+                transform: translateX(-100%); 
+            }
+            50% { 
+                opacity: 0.3; 
+            }
+            100% { 
+                transform: translateX(200%); 
+            }
+        }
+
+        .floating-particle {
+            position: absolute;
+            width: 3px;
+            height: 3px;
+            background: var(--primary);
+            border-radius: 50%;
+            opacity: 0;
+            animation: floatUp 10s ease-in-out infinite;
+        }
+
+        .particle-1 { left: 15%; animation-delay: 0s; }
+        .particle-2 { left: 45%; animation-delay: 3s; }
+        .particle-3 { left: 75%; animation-delay: 6s; }
+        .particle-4 { left: 30%; animation-delay: 2s; }
+        .particle-5 { left: 60%; animation-delay: 5s; }
+
+        @keyframes floatUp {
+            0% {
+                opacity: 0;
+                transform: translateY(100vh) translateX(0) scale(1);
+            }
+            20% {
+                opacity: 0.6;
+            }
+            80% {
+                opacity: 0.6;
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(-100vh) translateX(100px) scale(0.5);
+            }
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 70px;
+            background: rgba(10, 10, 10, 0.98);
+            backdrop-filter: blur(30px) saturate(180%);
+            border-bottom: 1px solid var(--border);
+            z-index: 1000;
+            display: none;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 50px;
+        }
+
+        nav.active {
+            display: flex;
+        }
+
+        nav::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--primary), transparent);
+            opacity: 0.2;
+        }
+
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .nav-logo {
+            height: 42px;
+            opacity: 0.95;
+            transition: all 0.3s ease;
+        }
+
+        .nav-logo:hover {
+            opacity: 1;
+            transform: scale(1.05);
+        }
+
+        .nav-divider {
+            width: 1px;
+            height: 28px;
+            background: var(--border);
+        }
+
+        .nav-title {
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+            color: var(--text-muted);
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 5px;
+        }
+
+        .nav-item {
+            padding: 10px 22px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            transition: all 0.3s ease;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .nav-item::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: width 0.3s ease;
+        }
+
+        .nav-item:hover,
+        .nav-item.active {
+            color: var(--primary);
+        }
+
+        .nav-item.active::before {
+            width: 100%;
+        }
+
+        /* Cover Page */
+        #coverPage {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        #coverPage.hidden {
+            display: none;
+        }
+
+        .cover-container {
+            text-align: center;
+            max-width: 1100px;
+            padding: 0 40px;
+        }
+
+        .cover-badge {
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--primary);
+            margin-bottom: 35px;
+            opacity: 0;
+            animation: fadeInUp 1s ease 0.2s forwards;
+        }
+
+        .cover-title {
+            font-size: clamp(3.5rem, 10vw, 8.5rem);
+            font-weight: 900;
+            line-height: 0.95;
+            letter-spacing: -4px;
+            margin-bottom: 35px;
+            opacity: 0;
+            animation: fadeInUp 1s ease 0.4s forwards;
+        }
+
+        .cover-title-main {
+            display: block;
+            color: var(--text);
+        }
+
+        .cover-title-accent {
+            display: block;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--blue) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .cover-description {
+            font-size: 1.15rem;
+            color: var(--text-dim);
+            max-width: 650px;
+            margin: 0 auto 55px;
+            line-height: 1.8;
+            opacity: 0;
+            animation: fadeInUp 1s ease 0.6s forwards;
+        }
+
+        .cover-cta {
+            background: var(--primary);
+            color: var(--dark);
+            padding: 18px 50px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            opacity: 0;
+            animation: fadeInUp 1s ease 0.8s forwards;
+            transition: transform 0.3s ease;
+        }
+
+        .cover-cta::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: rgba(0, 0, 0, 0.15);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: width 0.6s ease, height 0.6s ease;
+        }
+
+        .cover-cta:hover {
+            transform: translateY(-3px);
+        }
+
+        .cover-cta:hover::before {
+            width: 400px;
+            height: 400px;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .cover-statistics {
+            display: flex;
+            gap: 60px;
+            justify-content: center;
+            margin-top: 80px;
+            opacity: 0;
+            animation: fadeInUp 1s ease 1s forwards;
+        }
+
+        .stat-box {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 900;
+            color: var(--primary);
+            font-family: 'JetBrains Mono', monospace;
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 0.65rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-top: 12px;
+        }
+
+        /* Main Content Sections */
+        .content-section {
+            min-height: 100vh;
+            padding: 120px 50px 100px;
+            position: relative;
+            z-index: 2;
+            display: none;
+        }
+
+        .content-section.active {
+            display: block;
+            animation: sectionFadeIn 0.6s ease;
+        }
+
+        @keyframes sectionFadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .section-wrapper {
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        .section-heading {
+            margin-bottom: 80px;
+        }
+
+        .section-label {
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: clamp(2.5rem, 5vw, 4.8rem);
+            font-weight: 900;
+            letter-spacing: -2px;
+            color: var(--text);
+            line-height: 1.1;
+            margin-bottom: 25px;
+        }
+
+        .section-subtitle {
+            font-size: 1.05rem;
+            color: var(--text-dim);
+            max-width: 720px;
+            line-height: 1.8;
+        }
+
+        /* Tab Navigation */
+        .tab-navigation {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 60px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 10px;
+        }
+
+        .tab-button {
+            padding: 12px 30px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            transition: color 0.3s ease;
+            letter-spacing: 0.5px;
+        }
+
+        .tab-button::before {
+            content: '';
+            position: absolute;
+            bottom: -11px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: width 0.3s ease;
+        }
+
+        .tab-button:hover,
+        .tab-button.active {
+            color: var(--primary);
+        }
+
+        .tab-button.active::before {
+            width: 100%;
+        }
+
+        .tab-panel {
+            display: none;
+        }
+
+        .tab-panel.active {
+            display: block;
+            animation: tabFadeIn 0.4s ease;
+        }
+
+        @keyframes tabFadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(15px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Split Layout: Model + Content */
+        .split-container {
+            display: grid;
+            grid-template-columns: 42% 58%;
+            gap: 60px;
+            align-items: start;
+            margin-bottom: 100px;
+        }
+
+        .model-container {
+            position: sticky;
+            top: 100px;
+            background: var(--dark-light);
+            border: 1px solid var(--border);
+            border-radius: 0;
+            overflow: hidden;
+            height: 650px;
+            box-shadow: 0 25px 70px rgba(0, 0, 0, 0.6);
+        }
+
+        .model-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 50px;
+            background: linear-gradient(180deg, rgba(254, 228, 64, 0.06) 0%, transparent 100%);
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .model-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .content-column {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        /* Content Cards */
+        .content-card {
+            background: linear-gradient(135deg, rgba(26, 26, 26, 0.6) 0%, rgba(20, 20, 20, 0.4) 100%);
+            border: 1px solid var(--border);
+            border-radius: 0;
+            padding: 40px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .content-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 0;
+            background: var(--primary);
+            transition: height 0.3s ease;
+        }
+
+        .content-card:hover {
+            border-color: rgba(254, 228, 64, 0.3);
+            transform: translateX(10px);
+        }
+
+        .content-card:hover::before {
+            height: 100%;
+        }
+
+        .content-card h3 {
+            font-size: 1.7rem;
+            font-weight: 800;
+            color: var(--text);
+            margin-bottom: 22px;
+            letter-spacing: -0.5px;
+        }
+
+        .content-card h4 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin: 30px 0 15px;
+        }
+
+        .content-card p {
+            color: var(--text-dim);
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        .content-card ul {
+            list-style: none;
+            margin: 20px 0;
+        }
+
+        .content-card ul li {
+            padding-left: 25px;
+            position: relative;
+            margin-bottom: 12px;
+            color: var(--text-dim);
+            line-height: 1.7;
+        }
+
+        .content-card ul li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        /* Formula Display */
+        .formula-container {
+            background: rgba(0, 148, 255, 0.05);
+            border: 1px solid rgba(0, 148, 255, 0.2);
+            border-left: 4px solid var(--blue);
+            padding: 28px;
+            margin: 28px 0;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1rem;
+            color: var(--blue);
+            border-radius: 0;
+            line-height: 1.8;
+            font-weight: 600;
+        }
+
+        .formula-label {
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 15px;
+        }
+
+        /* Example Block */
+        .example-block {
+            background: rgba(254, 228, 64, 0.03);
+            border: 1px solid rgba(254, 228, 64, 0.15);
+            border-radius: 0;
+            padding: 32px;
+            margin: 32px 0;
+        }
+
+        .example-label {
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+
+        .example-block h4 {
+            color: var(--primary);
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+
+        .example-step {
+            margin: 15px 0;
+            padding-left: 20px;
+            border-left: 2px solid rgba(254, 228, 64, 0.2);
+        }
+
+        .example-result {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--primary);
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        /* Data Table */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            background: var(--dark-light);
+            border: 1px solid var(--border);
+            border-radius: 0;
+            overflow: hidden;
+        }
+
+        .data-table thead {
+            background: rgba(254, 228, 64, 0.05);
+        }
+
+        .data-table th {
+            padding: 15px 20px;
+            text-align: left;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--primary);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .data-table td {
+            padding: 15px 20px;
+            color: var(--text-dim);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+        }
+
+        .data-table tbody tr {
+            transition: background 0.2s ease;
+        }
+
+        .data-table tbody tr:hover {
+            background: rgba(254, 228, 64, 0.02);
+        }
+
+        /* Video Embed */
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 0;
+            border: 1px solid var(--border);
+            margin: 30px 0;
+            background: var(--dark-light);
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Simulator Panel */
+        .simulator-panel {
+            background: var(--dark-medium);
+            border: 1px solid rgba(254, 228, 64, 0.3);
+            border-radius: 0;
+            padding: 40px;
+            margin: 40px 0;
+        }
+
+        .simulator-title {
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--primary);
+            margin-bottom: 30px;
+        }
+
+        .simulator-canvas {
+            width: 100%;
+            height: 450px;
+            background: var(--dark);
+            border: 1px solid var(--border);
+            border-radius: 0;
+            margin-bottom: 30px;
+            cursor: crosshair;
+        }
+
+        .simulator-controls {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .control-button {
+            padding: 12px 30px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            background: rgba(254, 228, 64, 0.05);
+            border: 1px solid var(--border);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 0;
+        }
+
+        .control-button:hover,
+        .control-button.active {
+            color: var(--dark);
+            background: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .slider-container {
+            margin: 25px 0;
+        }
+
+        .slider-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .slider-label {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--text-dim);
+            letter-spacing: 0.5px;
+        }
+
+        .slider-value {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            height: 4px;
+            background: var(--gray);
+            border-radius: 0;
+            outline: none;
+            appearance: none;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            appearance: none;
+            width: 18px;
+            height: 18px;
+            background: var(--primary);
+            border-radius: 0;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        input[type="range"]::-webkit-slider-thumb:hover {
+            transform: scale(1.3);
+        }
+
+        .result-display {
+            background: rgba(0, 255, 136, 0.05);
+            border: 1px solid rgba(0, 255, 136, 0.2);
+            border-radius: 0;
+            padding: 25px;
+            color: #00ff88;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.95rem;
+            line-height: 1.8;
+            font-weight: 600;
+        }
+
+        .highlight-text {
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        /* Status Badge */
+        .status-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 12px;
+            border-radius: 0;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .status-ok {
+            background: rgba(0, 255, 136, 0.1);
+            color: #00ff88;
+        }
+
+        .status-error {
+            background: rgba(255, 68, 68, 0.1);
+            color: #ff4444;
+        }
+
+        .status-badge::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: currentColor;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .split-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .model-container {
+                position: relative;
+                top: 0;
+                height: 500px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 0 20px;
+                height: auto;
+                flex-direction: column;
+                gap: 15px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+
+            .nav-menu {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .nav-item {
+                padding: 8px 15px;
+                font-size: 0.7rem;
+            }
+
+            .content-section {
+                padding: 100px 20px 60px;
+            }
+
+            .cover-title {
+                font-size: 3rem;
+            }
+
+            .cover-statistics {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .content-card {
+                padding: 25px;
+            }
+
+            .simulator-panel {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Technical Background -->
+    <div class="tech-background">
+        <div class="grid-pattern"></div>
+        <div class="pulse-line pulse-line-1"></div>
+        <div class="pulse-line pulse-line-2"></div>
+        <div class="pulse-line pulse-line-3"></div>
+        <div class="floating-particle particle-1"></div>
+        <div class="floating-particle particle-2"></div>
+        <div class="floating-particle particle-3"></div>
+        <div class="floating-particle particle-4"></div>
+        <div class="floating-particle particle-5"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav id="mainNav">
+        <div class="nav-brand">
+            <img src="https://www.sena.edu.co/Style%20Library/alayout/images/logoSena.png?rev=40" alt="SENA" class="nav-logo">
+            <div class="nav-divider"></div>
+            <img src="https://i.imgur.com/0C3juds.png" alt="Electricidad" class="nav-logo">
+            <div class="nav-divider"></div>
+            <span class="nav-title">Electricidad Industrial</span>
+        </div>
+        <div class="nav-menu">
+            <button class="nav-item active" onclick="navigateToSection('home')">Inicio</button>
+            <button class="nav-item" onclick="navigateToSection('about')">Nosotros</button>
+            <button class="nav-item" onclick="navigateToSection('motors')">Motores</button>
+            <button class="nav-item" onclick="navigateToSection('circuits')">Circuitos</button>
+            <button class="nav-item" onclick="navigateToSection('instruments')">Instrumentos</button>
+        </div>
+    </nav>
+
+    <!-- Cover Page -->
+    <div id="coverPage">
+        <div class="cover-container">
+            <div class="cover-badge">SENA — Formación Técnica Profesional</div>
+            <h1 class="cover-title">
+                <span class="cover-title-main">ELECTRICIDAD</span>
+                <span class="cover-title-accent">INDUSTRIAL</span>
+            </h1>
+            <p class="cover-description">
+                Domina sistemas trifásicos, configuraciones eléctricas avanzadas y técnicas profesionales de medición e instrumentación con contenido interactivo y modelos 3D.
+            </p>
+            <button class="cover-cta" onclick="enterSite()">Acceder al Sistema</button>
+
+            <div class="cover-statistics">
+                <div class="stat-box">
+                    <div class="stat-number">03</div>
+                    <div class="stat-label">Módulos Técnicos</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">06</div>
+                    <div class="stat-label">Modelos 3D</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">05</div>
+                    <div class="stat-label">Simuladores</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Home Section -->
+    <section id="home" class="content-section">
+        <div class="section-wrapper">
